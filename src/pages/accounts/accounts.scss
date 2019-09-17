@@ -1,0 +1,19 @@
+page-accounts {
+
+    ion-label {
+        font-size: 12px !important;
+    }
+
+    ion-input{
+        input {
+            // text-align: right !important;
+            text-transform: capitalize;
+            font-size: 14px !important;
+        }
+        
+    }
+
+    ion-content {
+        background: #d9eeff !important;
+    }
+}

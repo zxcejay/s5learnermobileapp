@@ -1,0 +1,121 @@
+<!--
+  Generated template for the AccountsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar navbar color="page-header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Account information</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding >
+<!-- <ion-list>
+  <button ion-item *ngFor="let item of data" >
+    {{ item.firstname + ' ' + item.middlename + ' ' + item.firstname }}
+  </button>
+</ion-list> -->
+
+<ion-list>
+  <ion-item-divider>Personal Info</ion-item-divider>
+  <input type="hidden" [(ngModel)]="id" />
+  <ion-item>
+    <ion-label>Firstname</ion-label>
+    <ion-input type="text" [(ngModel)]="firstname"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Middlename</ion-label>
+    <ion-input type="text" [(ngModel)]="middlename"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Lastname</ion-label>
+    <ion-input type="text" [(ngModel)]="lastname"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Birthday</ion-label>
+    <ion-input type="date" [(ngModel)]="birthday"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<ion-list>
+  <ion-item-divider>More Info</ion-item-divider>
+  
+  <ion-item>
+    <ion-label>Section</ion-label>
+    <ion-input type="text" [(ngModel)]="section"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Parent/Guardian</ion-label>
+    <ion-input type="text" [(ngModel)]="guardian"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Address</ion-label>
+    <ion-input type="text" [(ngModel)]="address"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Contact No.</ion-label>
+    <ion-input type="text" [(ngModel)]="contact_number"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<ion-list>
+  <ion-item-divider>Change password</ion-item-divider>
+  
+  <ion-item>
+    <ion-label>Current password</ion-label>
+    <ion-input type="password" [(ngModel)]="opassword"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>New password</ion-label>
+    <ion-input type="password" [(ngModel)]="npassword"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Confirm password</ion-label>
+    <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+  </ion-item>
+
+</ion-list>
+
+<button ion-button full color="light" (click)="saveData()"><ion-icon name="ios-information-circle"></ion-icon>&nbsp;Save information</button>
+<!-- <ion-item-divider>More Info</ion-item-divider>
+
+<ion-item>
+  <ion-label>Section</ion-label>
+  <ion-input type="text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Parent/Guardian</ion-label>
+  <ion-input type="text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Address</ion-label>
+  <ion-input type="text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Contact No.</ion-label>
+  <ion-input type="text"></ion-input>
+</ion-item> -->
+
+
+</ion-content>

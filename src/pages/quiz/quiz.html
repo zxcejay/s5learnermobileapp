@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar navbar color="page-header">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Quiz</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+    <h3>Which of the following is an island transportation?</h3>
+ 
+    <ion-list no-lines radio-group (ionChange)="selectedAnswer($event)">
+
+        <ion-item>
+
+            <ion-label>A. Test answer A</ion-label>
+            <ion-radio value="a" [checked] ="checked"></ion-radio>
+
+        </ion-item>
+
+        <ion-item>
+
+            <ion-label>B.  Test answer B</ion-label>
+            <ion-radio value="b" [checked] ="checked"></ion-radio>
+
+        </ion-item>
+
+        <ion-item>
+
+            <ion-label>C.  Test answer C</ion-label>
+            <ion-radio value="c" [checked] ="checked"></ion-radio>
+
+        </ion-item>
+
+        <ion-item>
+
+            <ion-label>D.  Test answer D</ion-label>
+            <ion-radio value="d" [checked] ="checked"></ion-radio>
+
+        </ion-item>
+
+    </ion-list>
+    <button ion-button color="page-header" (click)="alert()" full >Submit</button>
+</ion-content>

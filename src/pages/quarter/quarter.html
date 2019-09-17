@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="page-header">
+    <ion-title>Quarter {{quarter_id}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card color="card">
+  <ion-card-header>
+    Topics
+  </ion-card-header>
+
+  <ion-list *ngFor="let topic of topics">
+    
+    <button *ngIf="topic.status==1" ion-item (click)="itemTapped($event,topic)">
+      <ion-icon name="copy" item-start></ion-icon>
+       {{topic.title}}
+    </button>
+
+  </ion-list>
+  
+</ion-card>
+<!-- <div *ngFor="let status of exercise_status">
+    <button *ngIf="status.exercise_status=='false'" 
+            ion-button color="dark" full 
+            (click)="gotoExercise()" >Exercise here
+    </button>
+  </div> -->
+  <div style="margin:12px 12px;">
+    <button ion-button color="page-header" full (click)="gotoQuiz()">Take quiz</button>
+  </div>
+
+</ion-content>

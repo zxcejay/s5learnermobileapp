@@ -1,0 +1,70 @@
+page-exercise {
+    background: black;
+    font-size: medium;
+        .item ,.item-block ,.item-ios {
+        background: transparent;
+        color: white;
+        border: 2px solid darkblue;
+        border-radius: 35px;
+        }
+        .item-md.item-block .item-inner {
+            border-bottom: unset;
+        }
+        // .item-radio {
+        // background: transparent;
+        // color: white;
+        // border: 2px solid darkblue;
+        // }
+        
+
+
+        
+      #wrapper {
+        border: 1px solid black;
+        width: 282px;
+        height: 254px;
+        margin: 0 auto;
+        background: gray;
+      }
+      
+      div {
+        contentEditable: true;  
+      }
+      
+      .filled {
+        width: 28px;
+        height: 28px;
+        background: black;
+        border: 1px solid black;
+        padding: 0;
+        margin: 0;
+        float: left;
+      }
+      
+      .empty {
+        width: 28px;
+        height: 28px;
+        border: 1px solid black;
+        padding: 0;
+        margin: 0;
+        float: left;
+      }
+      
+      .numbered {
+        counter-increment: value;
+      }
+      
+      .numbered:nth-of-type(n)::before {
+        content: counter(value);
+        font-size: 10px;
+        position: absolute;
+      }
+
+      input[type=text] {
+        width: 27px;
+        height: 25px;
+        text-transform: uppercase;
+      }
+
+
+}

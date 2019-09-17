@@ -1,0 +1,241 @@
+<ion-header>
+  <ion-navbar navbar color="page-header">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Exercise</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+<h2 style="text-align: center">Crossword puzzle</h2>
+    <div id="wrapper"> <!-- 15 x 15 block -->
+      <!-- first row -->
+      <div class="empty numbered">
+        <input type="text" maxlength="1" [value]="one_1">
+      </div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="one_2">
+      </div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="one_3">
+      </div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="one_4">
+      </div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="one_5">
+      </div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="one_6">
+      </div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="one_7">
+      </div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="one_8">
+      </div>
+      <div class="empty"></div>
+      <div class="empty numbered">
+          <input type="text" maxlength="1" [value]="two_1">
+      </div>
+
+      <!-- second row -->
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="two_2">
+      </div>
+
+      <!-- third row -->
+      <div class="empty numbered">
+          <input type="text" maxlength="1" [value]="three_1">
+      </div>
+      <div class="empty">
+        <input type="text" maxlength="1" [value]="three_2">
+      </div>
+      <div class="empty">
+        <input type="text" maxlength="1" [value]="three_3">
+      </div>
+      <div class="empty">
+        <input type="text" maxlength="1" [value]="three_4">
+      </div>
+      <div class="empty">
+        <input type="text" maxlength="1" [value]="three_5">
+      </div>
+      <div class="empty">
+        <input type="text" maxlength="1" [value]="three_6">
+      </div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="two_3">
+      </div>
+
+      <!-- fourth row -->
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty numbered">
+          <input type="text" maxlength="1" [value]="four_1">
+      </div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="two_4">
+      </div>
+
+      <!-- fifth row -->
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty numbered">
+          <input type="text" maxlength="1" [value]="five_1">
+      </div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="four_2">
+      </div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="two_5">
+      </div>
+
+      <!-- sixth row -->
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="five_2">
+      </div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="four_3">
+      </div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="two_6">
+      </div>
+      
+
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="five_3">
+      </div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="four_4">
+      </div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="two_7">
+      </div>
+
+
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="five_4">
+      </div>
+      <div class="empty"></div>
+      <div class="empty"></div>      
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty">
+          <input type="text" maxlength="1" [value]="four_5">
+      </div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+
+
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+    </div>
+    <br>
+    <div *ngFor="let ex of exercise; index as i" style="padding-left:45px;">
+      <h3>{{ i+1 }}. {{ ex.exerciseQuestion }}</h3>
+    </div>
+
+    <div padding style="margin-left:15px;width:90%">
+        <button
+                ion-button color="dark" full 
+                (click)="checkScore()" >Submit
+        </button>
+      </div>
+
+    <!-- style="background:black;color:white;" -->
+  <!-- <ion-grid style="background:black;">
+    <ion-row style="margin: 0 auto;">
+      <img src="../../assets/imgs/logo-mil.png">
+    </ion-row>
+    <br>
+    <ion-row style="border:4px double darkblue;padding:10px 10px;border-radius: 35px;">
+      <ion-col col-12>{{ exercise[index].content }}</ion-col>
+    </ion-row>
+    <br>
+    <ion-row radio-group style="font-size:10px;" (ionChange)="selectedAnswer($event)">
+  
+      <ion-col col-6>
+        <ion-item>
+          <ion-label>A. {{ exercise[index].a }}</ion-label>
+          <ion-radio value="a" [checked] ="checked"></ion-radio>
+        </ion-item>
+      </ion-col>
+      
+      <ion-col col-6>
+        <ion-item>
+          <ion-label>C. {{ exercise[index].c }}</ion-label>
+          <ion-radio value="c" [checked] ="checked"></ion-radio>
+        </ion-item>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-item>
+          <ion-label>B. {{ exercise[index].b }}</ion-label>
+          <ion-radio value="b" [checked] ="checked"></ion-radio>
+        </ion-item>
+      </ion-col>
+      
+      <ion-col col-6>
+        <ion-item>
+          <ion-label>D. {{ exercise[index].d }}</ion-label>
+          <ion-radio value="d" [checked] ="checked"></ion-radio>
+        </ion-item>
+      </ion-col>
+      
+    </ion-row>
+    <br>
+    <ion-row style="margin: 0 2vw;">
+      <button (click)="next()" ion-button full outline style="border: 2px solid darkblue;color:gold;">Is that your final answer ?</button>
+    </ion-row>
+  
+  </ion-grid> -->
+</ion-content>

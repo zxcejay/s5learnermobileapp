@@ -1,0 +1,7 @@
+{
+  "name": "s5learner",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
